@@ -4,7 +4,13 @@ export type Cinema = { id: string; city_id: string; name: string; address: strin
 export type Screening = { id: string; cinema_id: string; description: string; ticket_url: string };
 export type Catalogue = { cities: City[]; cinemas: Cinema[]; screenings: Screening[] };
 export const catalogue: Catalogue = {
-  cities: [],
+  cities: [
+    { id: 'adana', name: 'Adana' },
+    { id: 'istanbul', name: 'İstanbul' },
+    { id: 'izmir', name: 'İzmir' },
+    { id: 'ankara', name: 'Ankara' },
+    { id: 'bursa', name: 'Bursa' },
+  ],
   cinemas: [],
   screenings: [],
 };
