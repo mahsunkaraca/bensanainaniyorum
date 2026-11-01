@@ -3,3 +3,14 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 
 .nav-ticket{background:var(--red);border-color:var(--red);color:#fff}.nav-ticket:hover{background:#c90812;border-color:#c90812}
+
+.imdb-section{max-width:1440px;margin:0 auto;padding:0 6% 50px}
+.imdb-card{display:flex;align-items:center;gap:28px;padding:30px;border:1px solid #ffffff18;border-radius:8px;background:linear-gradient(120deg,#191713,#121212 65%)}
+.imdb-logo{width:86px;height:43px;flex-shrink:0}
+.imdb-copy{flex:1;min-width:0}
+.imdb-copy h2{font-size:23px;letter-spacing:-.5px;font-weight:600;margin:10px 0}
+.imdb-copy p{color:#a29a93;font-size:12px;line-height:1.8;margin:0}
+.imdb-action{display:flex;flex-direction:column;align-items:center;gap:10px;flex-shrink:0}
+.imdb-action small{font-size:10px;color:#8e8881}
+.imdb-action button:disabled{cursor:not-allowed;transform:none;background:#e50914;opacity:.5}
+@media(max-width:700px){.imdb-card{align-items:flex-start;flex-direction:column;padding:24px;gap:20px}.imdb-copy h2{font-size:22px}.imdb-action{width:100%;align-items:stretch;text-align:center}.imdb-section{padding-bottom:35px}}

@@ -65,3 +65,7 @@ Bu komutlar manuel kullanım içindir; proje hazırlanırken otomatik push yapı
 - Bilet butonları doğru HTTPS sağlayıcı adresini yeni sekmede açar.
 - 375px ve 390px genişliklerde yatay taşma yoktur; klavye odağı ve azaltılmış hareket tercihi desteklenir.
 - Veri olmadan gerçekte var olmayan sinema veya bilet bağlantısı gösterilmez.
+
+## IMDb puanlama alanı
+
+Bilet bölümünün altında IMDb logosu ve puanlama çağrısı yer alır. `lib/film.ts` içindeki `imdbUrl` şu anda boştur; gerçek film bağlantısı gelene kadar buton pasiftir. Doğrulanmış HTTPS IMDb bağlantısı eklendiğinde buton otomatik etkinleşir.
