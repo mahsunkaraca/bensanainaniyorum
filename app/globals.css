@@ -5,5 +5,5 @@
 /* Film afişi, yazıların arkasında karartılmış sinematik arka plan. */
 .hero-art{background:none}
 .hero-art img{object-fit:cover;object-position:center 48%}
-.hero-shade{background:linear-gradient(90deg,rgba(12,12,12,.88) 0%,rgba(12,12,12,.65) 40%,rgba(12,12,12,.22) 100%),linear-gradient(0deg,#0c0c0c 0%,transparent 30%)}
-@media(max-width:700px){.hero-art{opacity:1}.hero-art img{object-position:46% center}.hero-shade{background:linear-gradient(90deg,rgba(12,12,12,.78),rgba(12,12,12,.38)),linear-gradient(0deg,#0c0c0c 0%,transparent 45%)}}
+.hero-shade{background:linear-gradient(90deg,rgba(12,12,12,.95) 0%,rgba(12,12,12,.82) 40%,rgba(12,12,12,.58) 100%),linear-gradient(0deg,#0c0c0c 0%,transparent 30%)}
+@media(max-width:700px){.hero-art{opacity:1}.hero-art img{object-position:46% center}.hero-shade{background:linear-gradient(90deg,rgba(12,12,12,.90),rgba(12,12,12,.68)),linear-gradient(0deg,#0c0c0c 0%,transparent 45%)}}
