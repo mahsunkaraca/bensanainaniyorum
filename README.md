@@ -38,7 +38,7 @@ Film adı, **13 Kasım** vizyon tarihi ve tanıtım metinleri `components/ticket
 
 ## Afiş
 
-`public/cinema.svg` projeye özel hazırlanmış temsili bir sinema görselidir; **resmî film afişi değildir**. Resmî afiş sağlandığında izinli görseli `public/` altına ekleyip `app/globals.css` içindeki `.hero-art` arka planını değiştirin. Görsel açıklamasını da `components/ticket-site.tsx` içinde güncelleyin. Oyuncu ve yapımcı bilgileri doğrulanmadan eklenmemiştir.
+`public/IMG_9307.jpeg` yüklenen resmî film afişidir. Ana bölümde Next.js Image ile gösterilir; mobil ve masaüstünde orijinal oranı korunur ve kırpılmaz. Afiş değiştirilecekse `components/ticket-site.tsx` içindeki görsel yolu, boyutları ve açıklaması güncellenir.
 
 ## Vercel
 
