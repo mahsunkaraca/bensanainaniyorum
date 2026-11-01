@@ -36,13 +36,6 @@ export default function TicketSite() {
           <div className="imdb-action">{film.imdbUrl ? <a className="button" href={film.imdbUrl} target="_blank" rel="noopener noreferrer">IMDb’de puanla <ArrowUpRight size={17}/></a> : <><button className="button" type="button" disabled aria-describedby="imdb-pending">IMDb’de puanla <ArrowUpRight size={17}/></button><small id="imdb-pending">IMDb bağlantısı yakında eklenecek.</small></>}</div>
         </div>
       </section>
-      <section className="imdb-section eksi-section" aria-labelledby="eksi-heading">
-        <div className="imdb-card eksi-card">
-          <div className="eksi-logo" aria-label="Ekşi Sözlük">ekşisözlük</div>
-          <div className="imdb-copy"><div className="eyebrow eksi-eyebrow">HİKÂYE BİTTİ, SOHBET DEVAM EDİYOR</div><h2 id="eksi-heading">Bir de sen anlat.</h2><p>Film hakkındaki düşüncelerini Ekşi Sözlük’te paylaş, sohbete katıl.</p></div>
-          <div className="imdb-action eksi-action">{film.eksiUrl ? <a className="button" href={film.eksiUrl} target="_blank" rel="noopener noreferrer">Ekşi Sözlük’te yorumla <ArrowUpRight size={17}/></a> : <><button className="button" type="button" disabled aria-describedby="eksi-pending">Ekşi Sözlük’te yorumla <ArrowUpRight size={17}/></button><small id="eksi-pending">Ekşi Sözlük bağlantısı yakında eklenecek.</small></>}</div>
-        </div>
-      </section>
       <section className="quote"><span>“</span><p>Aynı hikâye.<br/><em>Oyuncularla aynı salonda.</em></p><div>BEN SANA İNANIYORUM <i>·</i> 13 KASIM</div></section>
     </main>
     <footer><a className="wordmark" href="#">BEN SANA<br/><span>İNANIYORUM</span><i>.</i></a><p>© {new Date().getFullYear()} Ben Sana İnanıyorum.<br/>Tüm hakları saklıdır.</p><a href="#bilet">Gösterimde görüşürüz. <ArrowUpRight size={16}/></a></footer>

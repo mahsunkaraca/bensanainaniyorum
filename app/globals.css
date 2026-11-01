@@ -14,8 +14,3 @@
 .imdb-action small{font-size:10px;color:#8e8881}
 .imdb-action button:disabled{cursor:not-allowed;transform:none;background:#e50914;opacity:.5}
 @media(max-width:700px){.imdb-card{align-items:flex-start;flex-direction:column;padding:24px;gap:20px}.imdb-copy h2{font-size:22px}.imdb-action{width:100%;align-items:stretch;text-align:center}.imdb-section{padding-bottom:35px}}
-
-.eksi-card{background:linear-gradient(120deg,#152016,#121212 65%)}
-.eksi-logo{display:flex;align-items:center;justify-content:center;flex-shrink:0;min-width:110px;padding:13px 12px;border-radius:6px;background:#39852e;color:#fff;font-size:19px;font-weight:700;letter-spacing:-1px;line-height:1}
-.eksi-eyebrow{color:#8fc878;font-size:9px}
-.eksi-action .button{background:#39852e}.eksi-action .button:hover{background:#2e6d25}.eksi-action button:disabled{background:#39852e;cursor:not-allowed;transform:none}

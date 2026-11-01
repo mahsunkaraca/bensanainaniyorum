@@ -69,7 +69,3 @@ Bu komutlar manuel kullanım içindir; proje hazırlanırken otomatik push yapı
 ## IMDb puanlama alanı
 
 Bilet bölümünün altında IMDb logosu ve puanlama çağrısı yer alır. `lib/film.ts` içindeki `imdbUrl`, filmin https://www.imdb.com/title/tt45162733/ sayfasına yönlendirir. Puanlama butonu etkindir; bağlantı boşaltılırsa otomatik pasifleşir.
-
-## Ekşi Sözlük yorum alanı
-
-IMDb bölümünün altında yeşil zeminli beyaz ekşisözlük yazısı ve yorum butonu yer alır. `lib/film.ts` içindeki `eksiUrl` şimdilik boştur. Filmin gerçek başlık bağlantısı sağlandığında bu alana eklenir ve buton etkinleşir.
