@@ -8,7 +8,7 @@ export default function TicketSite() {
   const selected = data.cities.find(c => c.id === city);
   const venues = data.cinemas.filter(c => c.city_id === city);
   return <>
-    <header className="header"><a className="wordmark" href="#" aria-label="Ana sayfa">BEN SANA<br/><span>İNANIYORUM</span><i>.</i></a><nav><a href="#film">Oyunculu gösterimler</a><a className="nav-ticket" href="#bilet"><Ticket size={16}/> Gösterimleri keşfet <ArrowUpRight size={15}/></a></nav></header>
+    <header className="header"><a className="wordmark" href="#" aria-label="Ana sayfa">BEN SANA<br/><span>İNANIYORUM</span><i>.</i></a><nav><a href="#film">Oyunculu gösterimler</a><a className="nav-ticket" href="#bilet"><Ticket size={16}/> Oyunculu gösterim biletleri <ArrowUpRight size={15}/></a></nav></header>
     <main>
       <section className="hero" id="film">
         <div className="hero-art" role="img" aria-label="Kırmızı ışıklar içindeki sinema koltukları"/>
@@ -17,7 +17,7 @@ export default function TicketSite() {
           <h1>BEN SANA<br/><em>İNANIYORUM</em><span>.</span></h1>
           <p className="hero-copy">Filmi oyuncularla aynı salonda izle.<br/>Bu özel buluşmanın bir parçası ol.</p>
           <div className="release"><span>13</span><div><strong>KASIM</strong><small>SİNEMALARDA</small></div><div className="release-line"/><p>Oyuncularla.<br/>Aynı salonda.</p></div>
-          <a href="#bilet" className="button hero-button"><Ticket size={19}/> Gösterimleri keşfet <ArrowUpRight size={20}/></a>
+          <a href="#bilet" className="button hero-button"><Ticket size={19}/> Oyunculu gösterim biletleri <ArrowUpRight size={20}/></a>
         </div>
         <div className="hero-bottom"><span>OYUNCULARLA AYNI SALONDA.</span><a href="#bilet">Oyunculu gösterimleri keşfet <ArrowDown size={16}/></a><span className="hero-number">01 / 02</span></div>
       </section>
