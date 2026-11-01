@@ -38,7 +38,7 @@ Film adı, **13 Kasım** vizyon tarihi ve tanıtım metinleri `components/ticket
 
 ## Afiş
 
-`public/IMG_9307.jpeg` yüklenen resmî film afişidir. Ana bölümde Next.js Image ile alanı kaplayan arka plan olarak gösterilir. Üzerindeki siyah gradyan, metinlerin okunmasını sağlar; ekran oranına göre görsel kırpılır. Afiş değiştirilecekse `components/ticket-site.tsx` içindeki görsel yolu, boyutları ve açıklaması güncellenir.
+Ana bölümde `public/cinema.svg` içindeki kırmızı ışıklı sinema koltukları arka plan olarak kullanılır. Üzerindeki siyah gradyan metinlerin okunmasını sağlar. Yüklenen resmî afiş `public/IMG_9307.jpeg` dosyasında korunur, ancak sayfada gösterilmez.
 
 ## Vercel
 

@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Image from 'next/image';
 import { ArrowDown, ArrowUpRight, ChevronDown, MapPin, Ticket, ArrowRight } from 'lucide-react';
 import { catalogue } from '@/lib/catalogue';
 export default function TicketSite() {
@@ -12,7 +11,7 @@ export default function TicketSite() {
     <header className="header"><a className="wordmark" href="#" aria-label="Ana sayfa">BEN SANA<br/><span>İNANIYORUM</span><i>.</i></a><nav><a href="#film">Oyunculu gösterimler</a><a className="nav-ticket" href="#bilet"><Ticket size={16}/> Gösterimleri keşfet <ArrowUpRight size={15}/></a></nav></header>
     <main>
       <section className="hero" id="film">
-        <div className="hero-art"><Image src="/IMG_9307.jpeg" alt="Ben Sana İnanıyorum film afişi" fill sizes="100vw" priority /></div>
+        <div className="hero-art" role="img" aria-label="Kırmızı ışıklar içindeki sinema koltukları"/>
         <div className="hero-shade" aria-hidden="true"/>
         <div className="hero-content"><div className="eyebrow"><span/> OYUNCULU ÖZEL GÖSTERİMLER</div>
           <h1>BEN SANA<br/><em>İNANIYORUM</em><span>.</span></h1>
