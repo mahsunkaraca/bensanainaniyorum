@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ArrowDown, ArrowUpRight, ChevronDown, MapPin, Ticket, ArrowRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, ChevronDown, MapPin, Ticket, ArrowRight, CircleCheck } from 'lucide-react';
 import { catalogue } from '@/lib/catalogue';
 import { film } from '@/lib/film';
 export default function TicketSite() {
@@ -41,7 +41,7 @@ export default function TicketSite() {
             <div className="city-request-input"><MapPin size={19} aria-hidden="true"/><input id="requested-city" name="city" value={requestedCity} onChange={event => { setRequestedCity(event.target.value); setRequestSent(false); }} placeholder="Şehrinizi yazın" required maxLength={100} pattern={String.raw`.*\S.*`} autoComplete="off" /></div>
             <button type="submit" className="button">Talep et <ArrowUpRight size={18}/></button>
           </form>
-          <div className="city-request-status" role="status" aria-live="polite">{requestSent ? 'Talebiniz iletildi' : ''}</div>
+          <div className="city-request-status" role="status" aria-live="polite" aria-atomic="true">{requestSent && <div className="city-request-success"><CircleCheck size={24} aria-hidden="true"/><span>Talebiniz iletildi</span></div>}</div>
         </div>
       </section>
       <section className="imdb-section" aria-labelledby="imdb-heading">
