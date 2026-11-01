@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'ben sana inanıyorum | oyunculu gösterim',
+  title: 'Ben Sana İnanıyorum | Oyunculu Gösterim',
   description: 'Ben Sana İnanıyorum oyunculu özel gösterimleri. Şehrini seç, oyuncularla aynı salonda buluş. Bilet bağlantıları 13 Kasım’da paylaşılacak.',
   robots: { index: true, follow: true },
 };
