@@ -1,7 +1,7 @@
-/** Gerçek şehir, sinema ve bilet bilgileri burada tutulur. Örnek bilet yoktur. */
+/** Şehir, sinema ve bilet bilgileri. Demo kayıtların bilet butonu pasiftir. */
 export type City = { id: string; name: string };
 export type Cinema = { id: string; city_id: string; name: string; address: string };
-export type Screening = { id: string; cinema_id: string; description: string; ticket_url: string };
+export type Screening = { id: string; cinema_id: string; description: string; ticket_url: string; demo?: boolean };
 export type Catalogue = { cities: City[]; cinemas: Cinema[]; screenings: Screening[] };
 export const catalogue: Catalogue = {
   cities: [
@@ -11,8 +11,12 @@ export const catalogue: Catalogue = {
     { id: 'ankara', name: 'Ankara' },
     { id: 'bursa', name: 'Bursa' },
   ],
-  cinemas: [],
-  screenings: [],
+  cinemas: [
+    { id: 'adana-paribu-cineverse', city_id: 'adana', name: 'Adana Paribu Cineverse', address: '' },
+  ],
+  screenings: [
+    { id: 'adana-16-kasim-1900', cinema_id: 'adana-paribu-cineverse', description: '16 Kasım 19:00 Seansı', ticket_url: '', demo: true },
+  ],
 };
 
 // Hatalı bağlantı veya ilişkiyle yayın alınmasını önler.
@@ -30,6 +34,10 @@ export function validateCatalogue(data: Catalogue): void {
   }
   for (const screening of data.screenings) {
     if (!screening.description.trim() || !data.cinemas.some(c => c.id === screening.cinema_id)) throw new Error(`Seans bilgisi veya sinema ilişkisi geçersiz: ${screening.id}`);
+    if (screening.demo === true) {
+      if (screening.ticket_url) throw new Error(`Demo kayda bilet bağlantısı eklenemez: ${screening.id}`);
+      continue;
+    }
     const url = new URL(screening.ticket_url);
     if (url.protocol !== 'https:' || url.username || url.password) throw new Error(`Bilet adresi geçerli bir HTTPS bağlantısı olmalı: ${screening.id}`);
   }

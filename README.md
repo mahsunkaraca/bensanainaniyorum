@@ -73,3 +73,7 @@ Bilet bölümünün altında IMDb logosu ve puanlama çağrısı yer alır. `lib
 ## Görsel şehir talep alanı
 
 Alt kısımdaki şehir talep formu yalnızca arayüz demosudur. Gönderim, ağ isteği, localStorage, çerez veya veritabanı kaydı yapmaz. React state üzerinden “Talebiniz iletildi” mesajını gösterir; sayfa yenilenince durum sıfırlanır.
+
+## Adana demo gösterimi
+
+Adana Paribu Cineverse, 16 Kasım 19:00 Seansı görsel demo olarak eklenmiştir. `demo: true`, `ticket_url: ""` olduğu için Bilet Al butonu pasiftir. Gerçek bağlantı geldiğinde demo alanını kaldırın ve gerçek HTTPS bilet adresini ekleyin.

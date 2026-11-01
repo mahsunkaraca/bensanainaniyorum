@@ -25,3 +25,5 @@
 .city-request-input input::placeholder{color:#85807b}
 .city-request-status{min-height:20px;margin-top:14px;font-size:13px;color:#eee4db}
 @media(max-width:700px){.city-request-card{padding:25px}.city-request h2{font-size:25px}.city-request form{flex-direction:column}.city-request form .button{width:100%}}
+
+.session .demo-ticket:disabled{cursor:not-allowed;transform:none;opacity:.55}
