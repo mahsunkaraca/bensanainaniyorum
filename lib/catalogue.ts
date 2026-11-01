@@ -13,9 +13,17 @@ export const catalogue: Catalogue = {
   ],
   cinemas: [
     { id: 'adana-paribu-cineverse', city_id: 'adana', name: 'Adana Paribu Cineverse', address: '' },
+    { id: 'istanbul-demo', city_id: 'istanbul', name: 'İstanbul · Demo Sinema', address: '' },
+    { id: 'izmir-demo', city_id: 'izmir', name: 'İzmir · Demo Sinema', address: '' },
+    { id: 'ankara-demo', city_id: 'ankara', name: 'Ankara · Demo Sinema', address: '' },
+    { id: 'bursa-demo', city_id: 'bursa', name: 'Bursa · Demo Sinema', address: '' },
   ],
   screenings: [
     { id: 'adana-16-kasim-1900', cinema_id: 'adana-paribu-cineverse', description: '16 Kasım 19:00 Seansı', ticket_url: '', demo: true },
+    { id: 'istanbul-17-kasim-1930', cinema_id: 'istanbul-demo', description: '17 Kasım 19:30 Seansı', ticket_url: '', demo: true },
+    { id: 'izmir-18-kasim-2000', cinema_id: 'izmir-demo', description: '18 Kasım 20:00 Seansı', ticket_url: '', demo: true },
+    { id: 'ankara-19-kasim-1830', cinema_id: 'ankara-demo', description: '19 Kasım 18:30 Seansı', ticket_url: '', demo: true },
+    { id: 'bursa-20-kasim-1900', cinema_id: 'bursa-demo', description: '20 Kasım 19:00 Seansı', ticket_url: '', demo: true },
   ],
 };
 
