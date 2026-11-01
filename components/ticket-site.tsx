@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Image from 'next/image';
 import { ArrowDown, ArrowUpRight, ChevronDown, MapPin, Ticket, ArrowRight } from 'lucide-react';
 import { catalogue } from '@/lib/catalogue';
 export default function TicketSite() {
@@ -16,11 +15,9 @@ export default function TicketSite() {
         <div className="hero-shade" aria-hidden="true"/>
         <div className="hero-content"><div className="eyebrow"><span/> OYUNCULU ÖZEL GÖSTERİMLER</div>
           <h1>BEN SANA<br/><em>İNANIYORUM</em><span>.</span></h1>
-          <div className="hero-details"><div className="hero-info">
           <p className="hero-copy">Filmi oyuncularla aynı salonda izle.<br/>Bu özel buluşmanın bir parçası ol.</p>
           <div className="release"><span>13</span><div><strong>KASIM</strong><small>SİNEMALARDA</small></div><div className="release-line"/><p>Oyuncularla.<br/>Aynı salonda.</p></div>
           <a href="#bilet" className="button hero-button"><Ticket size={19}/> Oyunculu gösterim biletleri <ArrowUpRight size={20}/></a>
-          </div><figure className="poster-frame"><Image src="/IMG_9307.jpeg" alt="Ben Sana İnanıyorum resmî film afişi — Mahsun Karaca. 13 Kasım’da sinemalarda." width={1459} height={1855} sizes="(max-width: 700px) 220px, 260px" priority /></figure></div>
         </div>
         <div className="hero-bottom"><span>OYUNCULARLA AYNI SALONDA.</span><a href="#bilet">Oyunculu gösterimleri keşfet <ArrowDown size={16}/></a><span className="hero-number">01 / 02</span></div>
       </section>

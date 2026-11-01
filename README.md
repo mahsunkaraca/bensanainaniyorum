@@ -38,7 +38,7 @@ Film adı, **13 Kasım** vizyon tarihi ve tanıtım metinleri `components/ticket
 
 ## Afiş
 
-Ana bölümde `public/cinema.svg` içindeki kırmızı ışıklı sinema koltukları arka plan olarak kullanılır. Üzerindeki siyah gradyan metinlerin okunmasını sağlar. Resmî afiş `public/IMG_9307.jpeg` başlığın altında sağda ince bir çerçeveyle gösterilir. Dar telefon ekranlarında metinlerin altına yerleşir; afiş kırpılmaz.
+Ana bölümde `public/cinema.svg` içindeki kırmızı ışıklı sinema koltukları arka plan olarak kullanılır. Üzerindeki siyah gradyan metinlerin okunmasını sağlar. Yüklenen resmî afiş `public/IMG_9307.jpeg` dosyasında korunur, ancak sayfada gösterilmez.
 
 ## Vercel
 
