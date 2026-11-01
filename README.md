@@ -1,5 +1,7 @@
 # Ben Sana İnanıyorum
 
+Bu sayfa yalnızca **oyunculu özel gösterimler** içindir. Genel vizyon seansları eklenmez. Her oyunculu gösterim kaydında tek bir gerçek bilet bağlantısı kullanılır. Bağlantılar vizyon tarihi 13 Kasım’da sağlanacak; o zamana kadar boş listeler ve bilgilendirme mesajı korunur.
+
 Next.js, TypeScript ve Tailwind CSS ile hazırlanmış, siyah-kırmızı sinematik **tek sayfalık** film bileti sitesi. iPhone ekranlarına uyumludur. Yönetim paneli, kullanıcı hesabı, veritabanı ve ortam değişkeni gerektirmez. Sahte bilet bağlantıları içermez.
 
 ## Çalıştırma
