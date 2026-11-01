@@ -14,3 +14,14 @@
 .imdb-action small{font-size:10px;color:#8e8881}
 .imdb-action button:disabled{cursor:not-allowed;transform:none;background:#e50914;opacity:.5}
 @media(max-width:700px){.imdb-card{align-items:flex-start;flex-direction:column;padding:24px;gap:20px}.imdb-copy h2{font-size:22px}.imdb-action{width:100%;align-items:stretch;text-align:center}.imdb-section{padding-bottom:35px}}
+
+.city-request{max-width:1440px;margin:0 auto;padding:0 6% 45px}
+.city-request-card{padding:36px;border:1px solid #ffffff18;border-radius:8px;background:radial-gradient(ellipse at top right,#e5091410,transparent 70%),#131313}
+.city-request h2{font-size:28px;letter-spacing:-.7px;font-weight:600;margin:15px 0 12px}
+.city-request p{font-size:13px;color:#a29a93;line-height:1.8;margin:0 0 24px}
+.city-request form{display:flex;gap:12px;max-width:650px}
+.city-request-input{display:flex;align-items:center;gap:12px;flex:1;min-width:0;border:1px solid #ffffff25;border-radius:4px;background:#1b1b1b;padding:0 15px;color:var(--red)}
+.city-request-input input{width:100%;min-width:0;background:transparent;border:0;color:var(--text);padding:16px 0;font-size:14px}
+.city-request-input input::placeholder{color:#85807b}
+.city-request-status{min-height:20px;margin-top:14px;font-size:13px;color:#eee4db}
+@media(max-width:700px){.city-request-card{padding:25px}.city-request h2{font-size:25px}.city-request form{flex-direction:column}.city-request form .button{width:100%}}

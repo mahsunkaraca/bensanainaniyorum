@@ -69,3 +69,7 @@ Bu komutlar manuel kullanım içindir; proje hazırlanırken otomatik push yapı
 ## IMDb puanlama alanı
 
 Bilet bölümünün altında IMDb logosu ve puanlama çağrısı yer alır. `lib/film.ts` içindeki `imdbUrl`, filmin https://www.imdb.com/title/tt45162733/ sayfasına yönlendirir. Puanlama butonu etkindir; bağlantı boşaltılırsa otomatik pasifleşir.
+
+## Görsel şehir talep alanı
+
+Alt kısımdaki şehir talep formu yalnızca arayüz demosudur. Gönderim, ağ isteği, localStorage, çerez veya veritabanı kaydı yapmaz. React state üzerinden “Talebiniz iletildi” mesajını gösterir; sayfa yenilenince durum sıfırlanır.

@@ -6,6 +6,8 @@ import { film } from '@/lib/film';
 export default function TicketSite() {
   const data = catalogue;
   const [city, setCity] = useState('');
+  const [requestedCity, setRequestedCity] = useState('');
+  const [requestSent, setRequestSent] = useState(false);
   const selected = data.cities.find(c => c.id === city);
   const venues = data.cinemas.filter(c => c.city_id === city);
   return <>
@@ -34,6 +36,19 @@ export default function TicketSite() {
           <svg className="imdb-logo" viewBox="0 0 100 50" role="img" aria-label="IMDb"><rect width="100" height="50" rx="6" fill="#f5c518"/><text x="50" y="35" textAnchor="middle" fill="#111" fontFamily="Arial, Helvetica, sans-serif" fontWeight="900" fontSize="33" letterSpacing="-2">IMDb</text></svg>
           <div className="imdb-copy"><div className="eyebrow muted">FİLM BİTTİ, SÖZ SENDE</div><h2 id="imdb-heading">Senin yorumun, senin puanın.</h2><p>Ben Sana İnanıyorum’u izledikten sonra IMDb’de puanla, düşüncelerini paylaş.</p></div>
           <div className="imdb-action">{film.imdbUrl ? <a className="button" href={film.imdbUrl} target="_blank" rel="noopener noreferrer">IMDb’de puanla <ArrowUpRight size={17}/></a> : <><button className="button" type="button" disabled aria-describedby="imdb-pending">IMDb’de puanla <ArrowUpRight size={17}/></button><small id="imdb-pending">IMDb bağlantısı yakında eklenecek.</small></>}</div>
+        </div>
+      </section>
+      <section className="city-request" aria-labelledby="city-request-heading">
+        <div className="city-request-card">
+          <div className="eyebrow muted">BİR SONRAKİ DURAK SENİN ŞEHRİN OLSUN</div>
+          <h2 id="city-request-heading">Şehriniz listede yok mu?</h2>
+          <p>O halde istediğiniz şehri yazın, en çok talep olan yere gelelim!</p>
+          <form onSubmit={event => { event.preventDefault(); if (!requestedCity.trim()) return; setRequestSent(true); setRequestedCity(''); }}>
+            <label className="sr-only" htmlFor="requested-city">Gösterim istediğiniz şehir</label>
+            <div className="city-request-input"><MapPin size={19} aria-hidden="true"/><input id="requested-city" name="city" value={requestedCity} onChange={event => { setRequestedCity(event.target.value); setRequestSent(false); }} placeholder="Şehrinizi yazın" required maxLength={100} pattern={String.raw`.*\S.*`} autoComplete="off" /></div>
+            <button type="submit" className="button">Talep et <ArrowUpRight size={18}/></button>
+          </form>
+          <div className="city-request-status" role="status" aria-live="polite">{requestSent ? 'Talebiniz iletildi' : ''}</div>
         </div>
       </section>
       <section className="quote"><span>“</span><p>Aynı hikâye.<br/><em>Oyuncularla aynı salonda.</em></p><div>BEN SANA İNANIYORUM <i>·</i> 13 KASIM</div></section>
