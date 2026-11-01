@@ -68,4 +68,4 @@ Bu komutlar manuel kullanım içindir; proje hazırlanırken otomatik push yapı
 
 ## IMDb puanlama alanı
 
-Bilet bölümünün altında IMDb logosu ve puanlama çağrısı yer alır. `lib/film.ts` içindeki `imdbUrl` şu anda boştur; gerçek film bağlantısı gelene kadar buton pasiftir. Doğrulanmış HTTPS IMDb bağlantısı eklendiğinde buton otomatik etkinleşir.
+Bilet bölümünün altında IMDb logosu ve puanlama çağrısı yer alır. `lib/film.ts` içindeki `imdbUrl`, filmin https://www.imdb.com/title/tt45162733/ sayfasına yönlendirir. Puanlama butonu etkindir; bağlantı boşaltılırsa otomatik pasifleşir.

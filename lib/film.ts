@@ -1,6 +1,6 @@
-/** Filmin doğrulanmış IMDb sayfası geldiğinde buraya ekleyin. */
+/** Filmin IMDb sayfası. */
 export const film: { imdbUrl: string } = {
-  imdbUrl: '',
+  imdbUrl: 'https://www.imdb.com/title/tt45162733/',
 };
 
 if (film.imdbUrl) {
