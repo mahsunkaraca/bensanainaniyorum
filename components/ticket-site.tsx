@@ -31,13 +31,6 @@ export default function TicketSite() {
         <div aria-live="polite">{city && venues.length ? <div className="cinema-list">{venues.map((v, index) => <article className="cinema" key={v.id}><span className="cinema-index">{String(index + 1).padStart(2, '0')}</span><div className="cinema-details"><h3>{v.name}</h3>{v.address && <p><MapPin size={13}/>{v.address}</p>}<div className="sessions">{data.screenings.filter(s => s.cinema_id === v.id).map(s => <div className="session" key={s.id}><span>{s.description}</span><a className="button" href={s.ticket_url} target="_blank" rel="noopener noreferrer">Bilet Al <ArrowUpRight size={17}/></a></div>)}{!data.screenings.some(s => s.cinema_id === v.id) && <p>Oyunculu gösterimin detayları ve bilet bağlantısı yakında burada.</p>}</div></div></article>)}</div> : <div className="empty"><div className="empty-icon"><Ticket size={28}/></div><h3>{city ? 'Bu şehirde oyunculu gösterim için hazırlanıyoruz.' : data.cities.length ? 'Oyuncularla aynı salonda buluşalım.' : 'Büyük buluşmaya hazırlanıyoruz.'}</h3><p>{city ? 'Oyunculu gösterimin detayları ve bilet bağlantısı 13 Kasım’da burada paylaşılacak.' : data.cities.length ? 'Oyunculu gösterimleri keşfetmek için şehrini seç. Bilet bağlantıları 13 Kasım’da paylaşılacak.' : 'Oyunculu gösterimlerin bilet bağlantıları 13 Kasım’da burada paylaşılacak.'}</p><span className="empty-date">OYUNCULU ÖZEL GÖSTERİMLER</span></div>}</div>
         <div className="booking-note"><span><span className="status-dot"/> Burada yalnızca oyunculu gösterimlerin bilet bağlantıları paylaşılır.</span><span>Oyuncularla birlikte izleyelim. <ArrowRight size={14}/></span></div>
       </section>
-      <section className="imdb-section" aria-labelledby="imdb-heading">
-        <div className="imdb-card">
-          <svg className="imdb-logo" viewBox="0 0 100 50" role="img" aria-label="IMDb"><rect width="100" height="50" rx="6" fill="#f5c518"/><text x="50" y="35" textAnchor="middle" fill="#111" fontFamily="Arial, Helvetica, sans-serif" fontWeight="900" fontSize="33" letterSpacing="-2">IMDb</text></svg>
-          <div className="imdb-copy"><div className="eyebrow muted">FİLM BİTTİ, SÖZ SENDE</div><h2 id="imdb-heading">Senin yorumun, senin puanın.</h2><p>Ben Sana İnanıyorum’u izledikten sonra IMDb’de puanla, düşüncelerini paylaş.</p></div>
-          <div className="imdb-action">{film.imdbUrl ? <a className="button" href={film.imdbUrl} target="_blank" rel="noopener noreferrer">IMDb’de puanla <ArrowUpRight size={17}/></a> : <><button className="button" type="button" disabled aria-describedby="imdb-pending">IMDb’de puanla <ArrowUpRight size={17}/></button><small id="imdb-pending">IMDb bağlantısı yakında eklenecek.</small></>}</div>
-        </div>
-      </section>
       <section className="city-request" aria-labelledby="city-request-heading">
         <div className="city-request-card">
           <div className="eyebrow muted">BİR SONRAKİ DURAK SENİN ŞEHRİN OLSUN</div>
@@ -49,6 +42,13 @@ export default function TicketSite() {
             <button type="submit" className="button">Talep et <ArrowUpRight size={18}/></button>
           </form>
           <div className="city-request-status" role="status" aria-live="polite">{requestSent ? 'Talebiniz iletildi' : ''}</div>
+        </div>
+      </section>
+      <section className="imdb-section" aria-labelledby="imdb-heading">
+        <div className="imdb-card">
+          <svg className="imdb-logo" viewBox="0 0 100 50" role="img" aria-label="IMDb"><rect width="100" height="50" rx="6" fill="#f5c518"/><text x="50" y="35" textAnchor="middle" fill="#111" fontFamily="Arial, Helvetica, sans-serif" fontWeight="900" fontSize="33" letterSpacing="-2">IMDb</text></svg>
+          <div className="imdb-copy"><div className="eyebrow muted">FİLM BİTTİ, SÖZ SENDE</div><h2 id="imdb-heading">Senin yorumun, senin puanın.</h2><p>Ben Sana İnanıyorum’u izledikten sonra IMDb’de puanla, düşüncelerini paylaş.</p></div>
+          <div className="imdb-action">{film.imdbUrl ? <a className="button" href={film.imdbUrl} target="_blank" rel="noopener noreferrer">IMDb’de puanla <ArrowUpRight size={17}/></a> : <><button className="button" type="button" disabled aria-describedby="imdb-pending">IMDb’de puanla <ArrowUpRight size={17}/></button><small id="imdb-pending">IMDb bağlantısı yakında eklenecek.</small></>}</div>
         </div>
       </section>
       <section className="quote"><span>“</span><p>Aynı hikâye.<br/><em>Oyuncularla aynı salonda.</em></p><div>BEN SANA İNANIYORUM <i>·</i> 13 KASIM</div></section>
