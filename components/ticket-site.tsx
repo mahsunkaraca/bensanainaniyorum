@@ -12,13 +12,14 @@ export default function TicketSite() {
     <header className="header"><a className="wordmark" href="#" aria-label="Ana sayfa">BEN SANA<br/><span>İNANIYORUM</span><i>.</i></a><nav><a href="#film">Oyunculu gösterimler</a><a className="nav-ticket" href="#bilet"><Ticket size={16}/> Gösterimleri keşfet <ArrowUpRight size={15}/></a></nav></header>
     <main>
       <section className="hero" id="film">
+        <div className="hero-art"><Image src="/IMG_9307.jpeg" alt="Ben Sana İnanıyorum film afişi" fill sizes="100vw" priority /></div>
+        <div className="hero-shade" aria-hidden="true"/>
         <div className="hero-content"><div className="eyebrow"><span/> OYUNCULU ÖZEL GÖSTERİMLER</div>
           <h1>BEN SANA<br/><em>İNANIYORUM</em><span>.</span></h1>
           <p className="hero-copy">Filmi oyuncularla aynı salonda izle.<br/>Bu özel buluşmanın bir parçası ol.</p>
           <div className="release"><span>13</span><div><strong>KASIM</strong><small>SİNEMALARDA</small></div><div className="release-line"/><p>Oyuncularla.<br/>Aynı salonda.</p></div>
           <a href="#bilet" className="button hero-button"><Ticket size={19}/> Gösterimleri keşfet <ArrowUpRight size={20}/></a>
         </div>
-        <div className="hero-poster"><Image src="/IMG_9307.jpeg" alt="Ben Sana İnanıyorum resmî film afişi. Mahsun Karaca, yönetmen Ömer Faruk Sorak. 13 Kasım’da sinemalarda." width={1459} height={1855} sizes="(max-width: 700px) 88vw, (max-width: 1100px) 38vw, 420px" priority /></div>
         <div className="hero-bottom"><span>OYUNCULARLA AYNI SALONDA.</span><a href="#bilet">Oyunculu gösterimleri keşfet <ArrowDown size={16}/></a><span className="hero-number">01 / 02</span></div>
       </section>
       <div className="marquee" aria-hidden="true"><span>OYUNCULU ÖZEL GÖSTERİMLER</span><i>✦</i><span>BEN SANA İNANIYORUM</span><i>✦</i><span>OYUNCULU ÖZEL GÖSTERİMLER</span><i>✦</i><span>BEN SANA İNANIYORUM</span></div>
